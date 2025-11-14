@@ -236,4 +236,10 @@ $$
 \text{фигурная}\\
 \text{скобка}
 \end{rcases}
+$$  
 $$
+\begin{aligned}
+\text{Выровненый}\\
+\text{текст}
+\end{aligned}
+$$  
