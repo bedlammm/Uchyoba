@@ -238,9 +238,7 @@
 > 9. <kbd>G</kbd>
 > 10. <kbd>p</kbd>
 > 11. <kbd>Ctrl</kbd>+<kbd>c</kbd>
-> 12. <kbd>:</kbd><kbd>w</kbd><kbd>q</kbd> <kbd>Enter</kbd>
-> 
-> *Проверка:*
+> 12. <kbd>:</kbd><kbd>wq</kbd> <kbd>Enter</kbd>
 > ```bash
 > ./check.sh
 > ```
