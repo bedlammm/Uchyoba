@@ -242,4 +242,20 @@
 > ```bash
 > ./check.sh
 > ```
-   
+
+> [!question] **Задание 25**  
+> ```bash
+> chmod 777 dir/
+> ```  
+> ```bash
+> dir/exec_me.sh
+> ```  
+
+> [!question] **Задание 26**  
+> ```bash
+> sudo chgrp student .secret/rock.txt
+> ```  
+> ```bash
+> cat .secret/rock.txt
+> ```
+
