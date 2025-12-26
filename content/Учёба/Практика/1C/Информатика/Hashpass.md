@@ -211,7 +211,7 @@
 > ```bash
 > sudo apt update
 > ```  
-
+ 
 > [!question] **Задание 22**  
 > ```
 > sudo apt update
