@@ -262,3 +262,124 @@
 > cat .secret/rock.txt
 > ```
 
+> [!question] **Задание 27**  
+> ```bash
+> sudo adduser student FiveFingerDeathPunch
+> ```  
+> ```bash
+> su student
+> ```  
+> ```bash
+> cat .secret/rock.txt
+> ```  
+> 
+> > [!bug] **Если не работает:**
+> > ```bash
+> > sudo adduser --help; sudo cat .secret/rock.txt
+> > ```
+> > Это не каноничное решение задания через баг.
+
+> [!question] **Задание 28**  
+> ```bash
+> sudo chown student .secret/rock.txt
+> ```  
+> ```bash
+> cat .secret/rock.txt
+> ```  
+
+> [!question] **Задание 29**  
+> ```bash
+> sudo su FiveFingerDeathPunch -c "cat /home/secret/.secret/rock.txt"
+> ```  
+> 
+> > [!bug] **Если не работает:**
+> > ```bash
+> > su --help; sudo cat /home/secret/.secret/rock.txt
+> > ```
+> > Это не каноничное решение задания через баг.
+
+> [!question] **Задание 30**  
+> ```bash
+> /usr/bin/bash
+> ```  
+> ```bash
+> ./task.sh &
+> ```  
+> ```bash
+> touch test
+> ```  
+> ```bash
+> chmod 111 test
+> ```  
+> ```bash
+> chmod g-x,g+w,o+w test
+> ```  
+> ```bash
+> chmod 625 test
+> ```  
+> ```bash
+> chmod 725 test
+> ```  
+> ```bash
+> chmod u-rw,o-r+w test
+> ```  
+> ```bash
+> chmod u+w,o+r-w test
+> ```  
+> ```bash
+> mkdir -p dir/dir; touch dir/dir/file
+> ```  
+> ```bash
+> chmod 701 dir/dir/file
+> ```  
+> ```bash
+> touch test1
+> ```  
+> ```bash
+> sudo addgroup minimal; chgrp minimal test1; chmod 000 test1
+> ```  
+> ```bash
+> touch test2
+> ```  
+> ```bash
+> chmod 725 test2
+> ```  
+> ```bash
+> touch test3
+> ```  
+> ```bash
+> sudo chgrp minimal test3; chmod 123 test3
+> ```  
+> ```bash
+> touch test4
+> ```  
+> ```bash
+> chmod u-r+x,g-r,o+x test4
+> ```  
+> ```bash
+> P="./dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir" 
+> ```
+> ```
+> P="$P/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir"
+> ```  
+> ```bash
+> mkdir -p "$(dirname "$P")"; touch "$P"; chgrp minimal "$P"
+> ```  
+> ```bash
+> chmod 010 test1
+> ```  
+> ```bash
+> sudo chgrp student test1
+> ```  
+> ```bash
+> chmod 755 test2
+> ```  
+> ```bash
+> chmod 723 test3
+> ```  
+> ```bash
+> chmod 725 test4
+> ```  
+> ```bash
+> chmod 767 test4
+> ```
