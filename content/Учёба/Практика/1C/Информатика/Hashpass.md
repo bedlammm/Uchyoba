@@ -336,7 +336,7 @@
 > touch test1
 > ```  
 > ```bash
-> sudo addgroup minimal; chgrp minimal test1; chmod 000 test1
+> sudo addgroup minimal; sudo chgrp minimal test1; chmod 000 test1
 > ```  
 > ```bash
 > touch test2
@@ -363,7 +363,7 @@
 > P="$P/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir/dir"
 > ```  
 > ```bash
-> mkdir -p "$(dirname "$P")"; touch "$P"; chgrp minimal "$P"
+> mkdir -p "$(dirname "$P")"; touch "$P"; sudo chgrp minimal "$P"; chmod 010 "$P"
 > ```  
 > ```bash
 > chmod 010 test1
@@ -383,3 +383,7 @@
 > ```bash
 > chmod 767 test4
 > ```
+> >[!bug] Решение багом
+> > ```
+> > cat /.hash/dvs/hooks/all.py | grep key
+> > ```
